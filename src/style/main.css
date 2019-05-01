@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+    font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+    color:grey;
+    transition:0.7s;
+}
+
+a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+#logIn {
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to right top, #a9bad2, #818ea1, #5a6572, #373e47, #171b20);
+    
+}
+
+#frm{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

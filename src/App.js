@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LogInPage from './Components/Pages/LogInPage';
+import PanelPage from './Components/Pages/PanelPage';
+import{
+    BrowserRouter as Router,
+    Route
+  } from 'react-router-dom';
+import {Container} from 'react-bootstrap';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+class App extends React.Component{
+    render(){
+        return(
+            <Router>
+            <Container bsPrefix >
+                <Route exact path="/" component={LogInPage}/>
+                <Route exact path="/Panel" component={PanelPage}/>
+
+            </Container>
+            </Router>
+            
+            
+            
+        )
+    }
 }
 
 export default App;
